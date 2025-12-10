@@ -5,6 +5,7 @@ import { TracksModule } from './modules/tracks/tracks.module';
 import { ArtistsModule } from './modules/artists/artists.module';
 import { PlaylistsModule } from './modules/playlists/playlists.module';
 import { FavoritesModule } from './modules/favorites/favorites.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { FavoritesModule } from './modules/favorites/favorites.module';
       }),
       inject: [ConfigService],
     }),
+    AuthModule,
     TracksModule,
     ArtistsModule,
     PlaylistsModule,

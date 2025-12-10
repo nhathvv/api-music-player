@@ -29,6 +29,8 @@ async function bootstrap() {
     .setTitle('Music App API')
     .setDescription('API documentation for Music Player App')
     .setVersion('1.0')
+    .addBearerAuth()
+    .addTag('auth', 'Authentication')
     .addTag('tracks', 'Track management')
     .addTag('artists', 'Artist management')
     .addTag('playlists', 'Playlist management')
